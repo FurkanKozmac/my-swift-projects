@@ -43,7 +43,7 @@ class AddNoteViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func saveOnClick(_ sender: Any) {
-        // Tıklandığında verileri Core Dataya kaydeder.
+
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let myNotes = NSEntityDescription.insertNewObject(forEntityName: "Notes", into: context)
